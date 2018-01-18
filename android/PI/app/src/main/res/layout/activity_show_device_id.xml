@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context="com.example.mikolaj.pi.ShowDeviceId"
+    tools:deviceIds="wear">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:boxedEdges="all">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:text="DeviceId = 0x009231" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.wear.widget.BoxInsetLayout>
+
+
